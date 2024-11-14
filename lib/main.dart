@@ -14,7 +14,11 @@ class MyApp extends StatelessWidget {
       title: "Building for HrDept",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        brightness: Brightness.light,
         useMaterial3: true,
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
       ),
       home: const Home(),
     );
