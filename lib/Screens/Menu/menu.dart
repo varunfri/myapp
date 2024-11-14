@@ -17,7 +17,6 @@ class _Menu extends State<Menu> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Row(
-              
               children: [
                 Padding(
                   padding: EdgeInsets.all(20),
