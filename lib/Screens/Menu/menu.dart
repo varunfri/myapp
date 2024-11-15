@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/Screens/Menu/items.dart';
 
+import '../profile.dart';
+
 class Menu extends StatefulWidget {
   const Menu({super.key});
 
@@ -73,9 +75,14 @@ class _Menu extends State<Menu> {
                         fontSize: 18, fontWeight: FontWeight.normal),
                   ),
                   onTap: () {
+                    //TODO implement the routes here
                     switch (index) {
                       case 0:
-                        print("object0");
+                        Navigator.pop(context);
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Profile()));
                         break;
                       case 1:
                         print("Object 1");
